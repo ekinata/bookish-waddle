@@ -11,7 +11,7 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = $_GET['sql'];
+$sql = $_POST['sql'];
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
