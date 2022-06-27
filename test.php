@@ -31,4 +31,7 @@ catch(){
 }
 
 mysqli_close($conn);
+
+return 1;
+echo "1";
 ?> 
